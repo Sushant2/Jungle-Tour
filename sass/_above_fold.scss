@@ -45,5 +45,45 @@ $bg-color: rgba(227, 227, 227, 0.08);
     padding-bottom: px-to-rem(18px);
     padding-right: px-to-rem(72px);
 
+    li {
+      display: inline-block;
+      padding: 0 px-to-rem(30px);
+    }
+
+    li:first-child {
+      padding-left: 0;
+    }
+
+    a {
+      transition: opacity 0.1s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  article {
+    margin-top: px-to-rem(204px);
+
+    h1 {
+      font-size: px-to-rem(36px);
+    }
+    p {
+      margin: px-to-rem(18px) 0;
+      width: px-to-rem(640px);
+      line-height: 200%;
+    }
+
+    button {
+      background-color: #404040;
+      color: #e8fff7;
+      padding: 0.8em 1.4em;
+      padding-right: 12em;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 }

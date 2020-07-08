@@ -144,3 +144,45 @@ p, a, button, input {
   padding-bottom: 1.125rem;
   padding-right: 4.5rem;
 }
+
+#above-fold nav li {
+  display: inline-block;
+  padding: 0 1.875rem;
+}
+
+#above-fold nav li:first-child {
+  padding-left: 0;
+}
+
+#above-fold nav a {
+  transition: opacity 0.1s;
+}
+
+#above-fold nav a:hover {
+  opacity: 0.6;
+}
+
+#above-fold article {
+  margin-top: 12.75rem;
+}
+
+#above-fold article h1 {
+  font-size: 2.25rem;
+}
+
+#above-fold article p {
+  margin: 1.125rem 0;
+  width: 40rem;
+  line-height: 200%;
+}
+
+#above-fold article button {
+  background-color: #404040;
+  color: #e8fff7;
+  padding: 0.8em 1.4em;
+  padding-right: 12em;
+}
+
+#above-fold article button:hover {
+  opacity: 0.6;
+}
