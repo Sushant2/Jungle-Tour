@@ -32,18 +32,6 @@ p, a, button, input {
   font-size: 1.125rem;
 }
 
-#dimmed-bg {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  background-color: rgba(20, 20, 20, 0.86);
-  top: 0;
-  left: 0;
-  transition: all 0.6s;
-  transform: translateX(-120vw);
-  visibility: hidden;
-}
-
 @keyframes intro-content {
   0% {
     opacity: 0;
@@ -113,4 +101,46 @@ p, a, button, input {
 
 #landing button:hover {
   opacity: .8;
+}
+
+#dimmed-bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.86);
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+  transform: translateX(-120vw);
+  visibility: hidden;
+}
+
+#full-site {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#above-fold {
+  position: relative;
+  color: white;
+  padding-left: 92px;
+  padding-top: 62px;
+  box-sizing: border-box;
+  width: 94%;
+  height: 100vh;
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s 0.5s;
+}
+
+#above-fold nav {
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  padding-bottom: 1.125rem;
+  padding-right: 4.5rem;
 }

@@ -28,6 +28,7 @@ $bg-color: rgba(227, 227, 227, 0.08);
 
 #above-fold {
   position: relative;
+  // z-index: 12;
   color: white;
   padding-left: 92px;
   padding-top: 62px;
@@ -36,14 +37,13 @@ $bg-color: rgba(227, 227, 227, 0.08);
   height: 100vh;
   display: inline-block;
   opacity: 0;
-  transition: all 1s .5s;
+  transition: all 1s 0.5s;
 
-  nav{
+  nav {
     display: inline-block;
     border-bottom: 1px solid $faint-white;
     padding-bottom: px-to-rem(18px);
     padding-right: px-to-rem(72px);
-    
-  }
 
+  }
 }
