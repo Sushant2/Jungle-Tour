@@ -10,10 +10,12 @@ function enterSite(){
 }
 
 $("#visible-section").mouseenter(function() {openForm();});
+$("#empty-section").mouseenter(function() {closeForm();});
+$("#form-section").mouseleave(function() {closeForm();});
 
 function openForm(){
     $("#register-side-bar").css("transform", "translate(-650px)");
-    $("#register-side-bar").css("transition-delay", "0");
+    $("#register-side-bar").css("transition-delay", "0s");
     $("#register-side-bar").css("z-index", "100");
     $("#call-num").css("opacity", "0");
     $("#reg").css("opacity", "0");
