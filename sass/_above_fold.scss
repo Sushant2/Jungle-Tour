@@ -28,7 +28,7 @@ $bg-color: rgba(227, 227, 227, 0.08);
 
 #above-fold {
   position: relative;
-  // z-index: 12;
+  z-index: 12;
   color: white;
   padding-left: 92px;
   padding-top: 62px;
@@ -110,8 +110,9 @@ $bg-color: rgba(227, 227, 227, 0.08);
     background-color: $bg-color;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
-    color: #3b3b3b;
+    color: #b3b3b3;
     font-size: px-to-rem(18px);
     transition: opacity 1.4s;
 
