@@ -1,0 +1,35 @@
+#testimonials {
+    $width-size: 70vw;
+
+    background-color: $bg-color;
+    margin: px-to-rem(200px) 0;
+    position: relative;
+    padding: 450px 0;
+
+    // clip-path: polygon(0 22%, 100% 0%, 100% 78%, 0% 100%);
+
+    &::before, &::after {
+        content: "";
+        height: 12vh;
+        background-color: $bg-color;
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &::before{
+        // bottom: 100%;
+    }
+
+
+    #testimonials-bg {
+        position: absolute;
+        width: $width-size;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+
+}

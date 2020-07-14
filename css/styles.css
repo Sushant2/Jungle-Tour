@@ -422,3 +422,29 @@ p, a, button, input {
 #locations li a {
   cursor: pointer;
 }
+
+#testimonials {
+  background-color: rgba(227, 227, 227, 0.08);
+  margin: 12.5rem 0;
+  position: relative;
+  padding: 450px 0;
+}
+
+#testimonials::before, #testimonials::after {
+  content: "";
+  height: 12vh;
+  background-color: rgba(227, 227, 227, 0.08);
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#testimonials #testimonials-bg {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
