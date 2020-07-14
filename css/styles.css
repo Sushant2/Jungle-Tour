@@ -434,10 +434,20 @@ p, a, button, input {
   content: "";
   height: 12vh;
   background-color: rgba(227, 227, 227, 0.08);
-  background-color: red;
   position: absolute;
   width: 100%;
   box-sizing: border-box;
+  border-right: 70vw solid white;
+}
+
+#testimonials::before {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+  bottom: 100%;
+}
+
+#testimonials::after {
+  clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
+  top: 100%;
 }
 
 #testimonials #testimonials-bg {

@@ -12,15 +12,21 @@
         content: "";
         height: 12vh;
         background-color: $bg-color;
-        background-color: red;
         position: absolute;
         width: 100%;
         box-sizing: border-box;
+        border-right: $width-size solid white;
     }
 
     &::before{
-        // bottom: 100%;
+        clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+        bottom: 100%;
     }
+    &::after{
+        clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
+        top: 100%;
+    }
+
 
 
     #testimonials-bg {
